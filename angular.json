@@ -72,7 +72,7 @@
               "buildTarget": "machinecoding:build:production"
             },
             "development": {
-              "buildTarget": "machinecoding:build:development"
+              "buildTarget": "machinecoding:build:development" 
             }
           },
           "defaultConfiguration": "development"
@@ -103,5 +103,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4235748e-9928-43f0-a77a-9b3c86753c08"
   }
 }

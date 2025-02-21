@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="buttons">
+      <button id='initialize' (click)="loadcanvas()">Load Canvas</button>
+      <button (click)="addText()">Add Text</button>
+      <button (click)="addRectangle()">Add Rectangle</button>
+      <button (click)="addSquare()">Add Square</button>
+      <button (click)="addTriangle()">Add Triangle</button>
+      <button (click)="addRhombus()">Add Rhombus</button>
+      <button (click)="addPentagon()">Add Pentagon</button>
+    </div>
+    <div class="dropdowns">
+        <label>Font Family</label>
+        <select #fontFamily (click)="changeFontStyle()">
+          <option value="arial">Arial</option>
+          <option value="myriad pro">Myriad Pro</option>
+          <option value="verdana">Verdana</option>
+          <option value="monaco">Monaco</option>
+          <option value="impact">Impact</option>
+        </select>
+        <label>Font Style</label>
+        <select #fontStyle (click)="changeFontStyle()">
+          <option value="normal">Normal</option>
+          <option value="italic">Italic</option>
+        </select>
+
+        <button class="saveButton" (click)="saveCanvasData()">Save</button>
+    </div>
+    <div>
+        <button class="saveButton" (click)="redirectHome()">Home</button>
+    </div>
+    <div class="canvas-conatiner">
+      <canvas id="machinecodecanvas" width="1000px" height="1000px"></canvas>
+    </div>
+  </div>
